@@ -1,0 +1,16 @@
+ffprobe started on 2013-08-20 at 18:05:18
+Report written to "ffprobe-20130820-180518.log"
+Command line:
+ffprobe udp://225.0.1.10:5004 -report dupa.txt
+ffprobe version git-2013-08-16-ec0e0eb Copyright (c) 2007-2013 the FFmpeg developers
+  built on Aug 16 2013 10:11:34 with gcc 4.4.7 (GCC) 20120313 (Red Hat 4.4.7-3)
+  configuration: --prefix=/root/ffmpeg_build --extra-cflags=-I/root/ffmpeg_build/include --extra-ldflags=-L/root/ffmpeg_build/lib --bindir=/root/bin --extra-libs=-ldl --enable-gpl --enable-nonfree --enable-libfdk_aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libfreetype --enable-libspeex --enable-libtheora
+  libavutil      52. 42.100 / 52. 42.100
+  libavcodec     55. 28.100 / 55. 28.100
+  libavformat    55. 13.102 / 55. 13.102
+  libavdevice    55.  3.100 / 55.  3.100
+  libavfilter     3. 82.100 /  3. 82.100
+  libswscale      2.  5.100 /  2.  5.100
+  libswresample   0. 17.103 /  0. 17.103
+  libpostproc    52.  3.100 / 52.  3.100
+Argument 'dupa.txt' provided as input filename, but 'udp://225.0.1.10:5004' was already specified.

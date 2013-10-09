@@ -1,0 +1,1 @@
+./bmdcapture  -m 2 -C 0 -f pipe:1 -F nut | ./ffmpeg -vsync 2 -re -y -i - -c:a libvo_aacenc  -ab 192k -ar 48000 -c:v libx264 -s 720x576 -r 25 -pix_fmt yuv420p -vb 2448k  -bf 0   -g 250 -keyint_min 5 -sc_threshold 40 -i_qfactor 0.71  -vf yadif -strict experimental -f mpegts udp://224.1.1.100:20000

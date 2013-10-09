@@ -1,0 +1,1 @@
+./bmdcapture -m 2 -F nut -f pipe:1 | ffmpeg -f nut -i pipe:0 -vcodec libx264 -pix_fmt yuv420p -aspect 16:9 -vb 1024k -vf yadif -g 5 -profile main -preset ultrafast  -tune zerolatency -acodec aac -ar 48000 -ac 2 -ab 64k -strict experimental -metadata streamName=atr2 -f flv tcp://10.10.2.162:6666

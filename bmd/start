@@ -1,0 +1,1 @@
+./bmdcapture  -m 2 -C 0 -f pipe:1 -F nut | ./ffmpeg -y -i - -vcodec libx264 -vf yadif -intra -vb 2048k -acodec libvo_aacenc -ab 192k -ar 48000 -f mpegts udp://@224.1.1.100:20000
